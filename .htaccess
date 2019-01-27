@@ -1,8 +1,8 @@
 RewriteEngine On
 RewriteBase /
-RewriteRule ^index\.html$ - [L]
+RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
-RewriteRule ^([_0-9a-zA-Z-]+/)?(.*\.html)$ $2 [L]
-RewriteRule . index.html [L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?(.*\.php)$ $2 [L]
+RewriteRule . index.php [L]
